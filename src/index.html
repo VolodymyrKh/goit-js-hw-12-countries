@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Countries</title>
-  
   </head>
 
   <body>
-   <input type="text" id="search-input" name="query" placeholder="please enter country you're looking for... ">
-   <ul class="countries-list" id="countries-list"></ul>
+    <input
+      type="text"
+      id="search-input"
+      name="query"
+      placeholder="please enter country you're looking for... "
+    />
+    <div class="overlay">
+      <div class="countries-list" id="query-result"></div>
+    </div>
   </body>
 </html>
