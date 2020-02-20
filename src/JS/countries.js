@@ -31,16 +31,16 @@ function searchInputHandler(e) {
           break;
         default:
           PNotify.notice(
-            'Too many matches found. Please enter more specific query',
+            'Too many matches found. Please enter more specific query!',
           );
       }
-    } else PNotify.alert('No matches found, please try again');
+    } else PNotify.alert('No matches found, please try again!');
 
     insertCountriesList(markup);
   });
   // .catch(error => console.log(error));
 
-  e.target.value = '';
+  // e.target.value = '';
 }
 
 function insertCountriesList(items) {
